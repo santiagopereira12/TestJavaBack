@@ -9,10 +9,10 @@ import javax.validation.constraints.Size;
 @Data
 public class UserRegisterRequestModel {
     @NotEmpty
-    private String name;
+    private String username;
     @NotEmpty
     @Email
-    private String email;
+    private String emailUser;
     @NotEmpty
     @Size(min = 8, max = 50)
     private String password;
